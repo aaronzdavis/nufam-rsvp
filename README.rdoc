@@ -1,28 +1,23 @@
-== README
+== Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```ruby
+git clone git@github.com:aaronzdavis/nufam-rsvp.git
 
-Things you may want to cover:
+cd nufam-rsvp
 
-* Ruby version
+brew update && brew upgrade `brew outdated`
 
-* System dependencies
+rbenv install 2.1.1
 
-* Configuration
+rbenv rehash
 
-* Database creation
+gem install bundler
 
-* Database initialization
+gem install rails
 
-* How to run the test suite
+bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+rake db:setup
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+rails s
+```
