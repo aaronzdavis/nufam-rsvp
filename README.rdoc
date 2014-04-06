@@ -1,6 +1,6 @@
 == Setup
 
-```ruby
+```
 git clone git@github.com:aaronzdavis/nufam-rsvp.git
 
 cd nufam-rsvp
