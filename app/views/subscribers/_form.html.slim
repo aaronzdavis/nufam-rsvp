@@ -1,5 +1,9 @@
 .row
   .span12
+    .alert.alert-success
+      strong Thanks!
+      '
+      ' Event details will be sent on April 12th around 7pm.
     = simple_form_for @subscriber, remote: true do |f|
       - if @subscriber.errors.any?
         #error_explanation
@@ -10,12 +14,6 @@
           ul
             - @subscriber.errors.full_messages.each do |message|
               li = message
-
-
-      .alert.alert-success
-        strong Thanks!
-        '
-        ' Event details will be sent on April 12th around 7pm.
 
       = f.input :name, input_html: { autofocus: 'autofocus' }
       = f.input :email

@@ -1,3 +1,4 @@
 $('input').val('')
-$('.alert-success').fadeIn(500).delay(2000).hide(200)
-$('.alert-success strong').text('Thanks <%= resource.name.split(' ').first %>!')
+$('form').fadeOut 400, ->
+  $('.alert-success').fadeIn(500)
+  $('.alert-success strong').text('Thanks <%= resource.name.split(' ').first %>!')
