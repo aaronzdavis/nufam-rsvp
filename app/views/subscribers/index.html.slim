@@ -1,0 +1,25 @@
+h1 Listing subscribers
+
+table
+  thead
+    tr
+      th Name
+      th Email
+      th Instagram
+      th
+      th
+      th
+
+  tbody
+    - @subscribers.each do |subscriber|
+      tr
+        td = subscriber.name
+        td = subscriber.email
+        td = subscriber.instagram
+        / td = link_to 'Show', subscriber
+        / td = link_to 'Edit', edit_subscriber_path(subscriber)
+        / td = link_to 'Destroy', subscriber, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Subscriber', new_subscriber_path

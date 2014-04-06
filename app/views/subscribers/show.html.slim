@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @subscriber.name
+p
+  strong Email:
+  = @subscriber.email
+p
+  strong Instagram:
+  = @subscriber.instagram
+
+/ = link_to 'Edit', edit_subscriber_path(@subscriber)
+/ '|
+/ = link_to 'Back', subscribers_path

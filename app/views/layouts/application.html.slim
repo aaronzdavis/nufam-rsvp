@@ -1,0 +1,24 @@
+doctype html
+html
+head
+  title Nuclear Family RSVP
+  = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+
+body
+  .container
+    .row
+      .span12
+        img.title src='http://cl.ly/image/1x3l221G0F45/l%20copy.jpg'
+    = yield
+
+  .container
+    .row
+      .span12
+        br
+        br
+        br
+        center
+          a href='http://instagram.com/nufamco?ref=badge' class='ig-b- ig-b-v-24' target='_blank'
+            img src='//badges.instagram.com/static/images/ig-badge-view-24.png' alt='Instagram'
